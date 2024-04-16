@@ -1,8 +1,58 @@
 @import "../shared/variables.scss";
 
-p {
+.header {
   background-color: $primary;
-  height: 200px;
-  border-radius: 20px;
-  padding: 10px;
+  height: 50px;
+  padding: 15px 200px 15px;
+  color: $accent;
+  display: flex;
+  justify-content: space-evenly;
+
+  * {
+    font-size: 16px;
+  }
+  a {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    &:active {
+      background-color: $accent;
+      color: $primary;
+    }
+  }
+}
+.header-elements {
+  display: flex;
+  align-items: center;
+
+  .search-container {
+    margin: 0 50px;
+  }
+  .search-input {
+    width: 300px;
+    padding: 10px;
+    background-color: azure;
+    color: $accent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    &::placeholder {
+      color: $accent;
+      opacity: 0.8;
+    }
+  }
+  .search-button {
+    padding: 10px;
+    color: $primary;
+    background-color: $accent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .header-links {
+    margin-right: 80px;
+    a {
+      margin-right: 20px;
+    }
+  }
 }
