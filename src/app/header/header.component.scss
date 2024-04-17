@@ -3,13 +3,18 @@
 
 .header {
   background-color: $primary;
-  height: 50px;
-  padding: 15px 0px 15px;
+  min-height: 50px;
+  padding: 15px 10px 15px;
   color: $accent;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   font-weight: bold;
+}
+.account {
+  margin-left: auto;
+  padding-right: 20px;
 }
 .material-symbols-rounded {
   font-size: 30px;
@@ -20,14 +25,17 @@ p {
 .header-elements {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 10px;
   .logo {
-    margin-right: 80px;
     font-size: 22px;
   }
   .search {
     display: flex;
     align-items: center;
-    margin-right: 50px;
+    padding: 5px;
     background-color: azure;
   }
   .search-input {
@@ -49,9 +57,7 @@ p {
     cursor: pointer;
   }
   .header-links {
-    display: flex;
-    flex-shrink: unset;
-    margin-right: 150px;
+    padding: 0 20px 0;
     a {
       margin: 10px;
     }
