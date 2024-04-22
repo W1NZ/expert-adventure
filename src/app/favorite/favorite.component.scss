@@ -1,0 +1,91 @@
+@import "../shared/variables.scss";
+.favorite-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.favorite-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.favorite-item-info {
+  flex: 1;
+}
+
+.favorite-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.favorite-item-price {
+  font-size: 16px;
+  color: #777;
+  margin: 0;
+}
+
+.favorite-item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: $danger;
+  color: $text-color;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.buy-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.buy-checkbox:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.buy-checkbox:checked::after {
+  content: "\2713";
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buy-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.6);
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: end;
+  text-align: right;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  .buy-button {
+    background-color: $success;
+    color: $main-background;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
