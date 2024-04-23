@@ -1,0 +1,15 @@
+@import "../shared/variables.scss";
+footer {
+  background-color: $accent;
+  color: $primary;
+  text-align: center;
+  padding: 20px 0;
+  max-width: 100vw;
+  .footer-link {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
